@@ -611,6 +611,13 @@ background-color:#101010; */
     border-radius: 20px;
     transition: all 0.4s ease;
     text-align: center;
+    cursor: pointer;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(8, 105, 71, 0.2);
+    border: 1px solid rgba(8, 105, 71, 0.5);
 }
 
 .contact-card i {
@@ -633,7 +640,28 @@ background-color:#101010; */
     font-size: 1.4rem;
     /* Reduced from 1.6rem */
     color: var(--text-color);
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    display: block;
+    /* Makes entire card clickable */
+}
+
+.contact-card:hover i {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #848cc2, #086947);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.contact-card:hover h3 {
+    background: linear-gradient(270deg, #086947 10%, #848cc2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.contact-card:hover a {
+    color: #086947;
 }
 
 .contact-form {
@@ -671,7 +699,7 @@ background-color:#101010; */
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(10px);
     padding: 4rem 0;
-    margin-top: 1rem;
+    margin-top: -10rem;
 }
 
 .footer-content {
