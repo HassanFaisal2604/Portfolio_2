@@ -67,3 +67,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     headerObserver.observe(homeSection);
 });
+
+// Create and animate particles
+
+// Loading animation
+window.addEventListener('load', () => {
+    const loader = document.querySelector('.loading');
+    setTimeout(() => {
+        loader.style.opacity = '0';
+        setTimeout(() => loader.remove(), 500);
+    }, 1000);
+});

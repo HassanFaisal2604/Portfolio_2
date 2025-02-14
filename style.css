@@ -459,6 +459,8 @@ background-color:#101010; */
     backdrop-filter: blur(10px);
     border: 1px solid rgba(8, 105, 71, 0.2);
     transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .project-1 {
@@ -480,6 +482,39 @@ background-color:#101010; */
     border: 2px solid #848cc2;
     box-shadow: 0 10px 30px rgba(8, 105, 71, 0.2);
     border: 1px solid rgba(8, 105, 71, 0.5);
+}
+
+.project-links {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-around;
+    transition: bottom 0.3s ease;
+}
+
+.project-1:hover .project-links,
+.project-2:hover .project-links,
+.project-3:hover .project-links {
+    bottom: 0;
+}
+
+.project-link {
+    color: var(--text-color);
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    color: #086947;
+    transform: translateY(-2px);
 }
 
 .projects span {
