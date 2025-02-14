@@ -419,6 +419,87 @@ background-color:#101010; */
     font-size: 2rem;
 }
 
+.projectsh1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 5rem;
+    position: relative;
+    display: inline-block;
+    left: 20%;
+    transform: translateX(-50%);
+}
+
+.projectsh1:hover {
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    transform: scaleX(1.1);
+    background: linear-gradient(270deg, #086947 10%, #848cc2);
+    background-clip: text;
+    color: transparent;
+}
+
+.projectsh1::after {
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 3px;
+    background: linear-gradient(90deg, #086947, #848cc2);
+}
+
+.project-1, .project-2, .project-3 {
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 2px solid #086947;
+    box-shadow: 0 0 10px #848cc2;
+    padding: 3rem;
+    font-size: 2rem;
+    margin: 3rem auto;
+    max-width: 800px;
+    background: rgba(16, 16, 16, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(8, 105, 71, 0.2);
+    transition: all 0.4s ease;
+}
+
+.project-1 {
+    text-align: left;
+}
+
+.project-2 {
+    text-align: right;
+}
+
+.project-3 {
+    text-align: left;
+}
+
+.project-1:hover, .project-2:hover, .project-3:hover {
+    box-shadow: 0 0 20px #086947;
+    cursor: pointer;
+    transform: scale(1.1) translateY(-5px);
+    border: 2px solid #848cc2;
+    box-shadow: 0 10px 30px rgba(8, 105, 71, 0.2);
+    border: 1px solid rgba(8, 105, 71, 0.5);
+}
+
+.projects span {
+    background: linear-gradient(270deg, #086947 10%, #848cc2);
+    background-clip: text;
+    color: transparent;
+    font-weight: 800;
+}
+
+.projects p {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
 /* Add these new animations */
 @keyframes fadeIn {
   from {
